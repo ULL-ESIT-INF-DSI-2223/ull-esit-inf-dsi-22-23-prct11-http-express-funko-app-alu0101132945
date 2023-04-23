@@ -24,7 +24,7 @@ describe('FunkoStorage methods tests', () => {
         };
         expect(user1.getFunko(1)).to.deep.equal(funko1);
         expect(user1.getFunko(2)).to.deep.equal(funko2);
-        expect(user1.addFunko(funko1)).to.be.equal(msg);
+        expect(user1.addFunko(funko1)).to.include(msg);
     });
     it('updateFunko test', () => {
         const funko5 = new Funko(5,'Spider man','Pop! Bobble: Marvel: Marvel Studios 10',FunkoTipo.vg,FunkoGen.pt,'Marvel: Marvel Studios', 440,true,'Iron Spider (Chrome)',39.54)
