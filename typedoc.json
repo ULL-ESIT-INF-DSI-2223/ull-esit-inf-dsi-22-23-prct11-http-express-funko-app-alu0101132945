@@ -1,0 +1,30 @@
+{
+  "entryPoints": [
+    "./src/ej-clase/collectable.ts",
+    "./src/ej-clase/printable.ts",
+    "./src/ej-clase/printablecollection.ts",
+    "./src/ej-clase/numericprintablecollection.ts",
+    "./src/ej-clase/stringprintablecollection.ts",
+    "./src/ejercicio-1/collectable.ts",
+    "./src/ejercicio-1/printable.ts",
+    "./src/ejercicio-1/streamable.ts",
+    "./src/ejercicio-1/basicstreamablecollection.ts",
+    "./src/ejercicio-1/documentary.ts",
+    "./src/ejercicio-1/films.ts",
+    "./src/ejercicio-1/series.ts",
+    "./src/ejercicio-1/documentarycollection.ts",
+    "./src/ejercicio-1/filmscollection.ts",
+    "./src/ejercicio-1/seriescollection.ts",
+    "./src/ejercicio-2/listable.ts",
+    "./src/ejercicio-2/list.ts",
+    "./src/ejercicio-3/artist.ts",
+    "./src/ejercicio-3/disc.ts",
+    "./src/ejercicio-3/discography.ts",
+    "./src/ejercicio-3/group.ts",
+    "./src/ejercicio-3/search.ts",
+    "./src/ejercicio-3/single.ts",
+    "./src/ejercicio-3/soloist.ts",
+    "./src/ejercicio-3/song.ts"
+  ],
+  "out": "./docs" 
+}

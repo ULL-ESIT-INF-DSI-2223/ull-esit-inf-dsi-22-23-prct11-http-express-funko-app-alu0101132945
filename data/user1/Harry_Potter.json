@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Harry_Potter",
+  "descripcion": "Harry Potter CoS 20th",
+  "tipo": "p",
+  "genero": "pt",
+  "franquicia": "Harry Potter",
+  "numero": 149,
+  "exclusivo": false,
+  "especial": "",
+  "valor": 12
+}
