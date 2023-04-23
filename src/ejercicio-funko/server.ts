@@ -1,8 +1,7 @@
 import express from 'express';
 import { Funko } from './funko.js';
 import { FunkoUserStorage } from './usuario.js';
-import { ResponseType,FunkoPop } from './tipos.js';
-import { userInfo } from 'os';
+import { ResponseType} from './tipos.js';
 
 const app = express();
 
@@ -16,10 +15,8 @@ app.get('/funkos',(req,res) => {
             res.json(resp);
         } else{
             const user = new FunkoUserStorage(req.query.username as string);
-            const lista = user.getMap()
-            lista.forEach((element: any) => {
-                res.json(user.showFunko(element.getID()));
-            });
+            const lista = user.listFunko()
+            res.json(lista);
         }
     }else {
         if(!req.query.username){  

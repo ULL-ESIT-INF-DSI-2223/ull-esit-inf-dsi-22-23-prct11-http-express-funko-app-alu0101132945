@@ -14,10 +14,9 @@
 	},
 	"typedocOptions":{
 		"entryPoints": [
-			"./src/ej-PE102/",
-			"./src/ejercicio-3/funko.ts",
-			"./src/ejercicio-3/app.ts",
-			"./src/ejercicio-3/usuario.ts"
+			"./src/ejercicio-funko/funko.ts",
+			"./src/ejercicio-funko/usuario.ts",
+			"./src/ejercicio-funko/tipos.ts"
 
 		],
 		"out": "./docs"

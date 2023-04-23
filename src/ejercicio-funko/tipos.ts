@@ -1,5 +1,6 @@
-import { Funko } from "./funko.js";
-
+/**
+ * tipo de respuesta para devolver un funko
+ */
 export type FunkoPop = {
     id : number;
     name: string;
@@ -13,6 +14,9 @@ export type FunkoPop = {
     precio : number;
 }
 
+/**
+ * tipo de respuesta con un mensaje de respuesta
+ */
 export type ResponseType = {
     success: boolean;
     msg?: string;

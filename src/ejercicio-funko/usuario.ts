@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import chalk from 'chalk';
 import { Funko } from './funko.js';
 import { FunkoPop, ResponseType } from './tipos.js';
 
@@ -63,25 +62,6 @@ export class FunkoUserStorage{
     private funkoDelete(funko:Funko):void{
         const filePath = path.join(this.userDir,`${funko.getName()}.json`);
         fs.unlinkSync(filePath);
-    }
-
-    /**
-     * metodo que establece el color de un funko  por su precio
-     * @param funko funko cuyo color va a ser determinado
-     * @returns devuelve el color en una cadena del funko 
-     */
-    private funkoColor(funko: Funko){
-        if(funko.getVal() <= 30){
-            return '#FF334F';
-            
-        }else if(funko.getVal() > 30 && funko.getVal() <= 70){
-            return'#FFA833';
-            
-        }else if(funko.getVal() > 70 && funko.getVal() <= 100){
-            return '#F6FF33';
-        }else{
-            return '#33FFF9';
-        }
     }
 
     /**
@@ -166,9 +146,9 @@ export class FunkoUserStorage{
      * metodo que devuelve los funkos de un usuario con sus datos
      */
     public listFunko(){
-        let result;
+        let result:any[] = [];
         this.funkomap.forEach(funko => {
-            result.push(this.showFunko(funko.getID()));
+            result.push(this.showFunko(funko.getID()))
         });
         return result;
     }
